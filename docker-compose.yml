@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  report.webapi:
+    image: ${DOCKER_REGISTRY-}reportwebapi
+    build:
+      context: .
+      dockerfile: Report.WebApi/Dockerfile
